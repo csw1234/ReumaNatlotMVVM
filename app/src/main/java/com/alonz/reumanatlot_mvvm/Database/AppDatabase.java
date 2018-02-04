@@ -18,7 +18,7 @@ public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase singleton;
     private static final String DATABASE_NAME = "ReumaDB.db";
 
-    public abstract ProductDao natlaDao();
+    public abstract ProductDao productDao();
 
     public static AppDatabase getAppDatabase(Context context){
         if (singleton == null){
